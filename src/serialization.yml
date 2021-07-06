@@ -1,0 +1,4 @@
+#Omnipay\Sebes\Item:
+#    attributes:
+#        parameters:
+#            ignore: true

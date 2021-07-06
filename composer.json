@@ -1,0 +1,27 @@
+{
+  "name": "axioma/omnipay-sebes",
+  "version": "0.1.0",
+  "type": "library",
+  "description": "Sebes support for Omnipay payment processing library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aleksandr Borodulin",
+      "email": "sashaborodulin@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\Sebes\\": "src/"
+    }
+  },
+  "require": {
+    "ext-openssl": "*",
+    "omnipay/common": "^3.0",
+    "symfony/serializer": "^5.1"
+  },
+  "require-dev": {
+    "omnipay/tests": "^3.0"
+  },
+  "prefer-stable": true
+}
