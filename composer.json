@@ -1,6 +1,5 @@
 {
   "name": "axioma/omnipay-sebes",
-  "version": "1.0.0",
   "type": "library",
   "description": "Sebes support for Omnipay payment processing library",
   "license": "MIT",

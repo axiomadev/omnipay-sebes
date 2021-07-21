@@ -62,10 +62,13 @@ class AcceptNotificationRequest extends CommonAbstractRequest implements Notific
 
     public function isValid()
     {
+        $signature = $this->httpRequest->headers->get('X-Signature');
+
         return 1 === openssl_verify(
             $this->httpRequest->getContent(),
-            $this->httpRequest->headers->get('X-Signature'),
-            $this->publicKey
+            base64_decode($signature),
+            $this->publicKey,
+            'sha256WithRSAEncryption'
         );
     }
 }
